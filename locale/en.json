@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Memory Nebula",
+    "description": "3D neural-graph panel for the meow-memory database: sidebar entry with embedded view, full web page, search/CRUD and forgetting-curve decay visualization."
+  }
+}
