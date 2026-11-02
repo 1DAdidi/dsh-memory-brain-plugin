@@ -1,6 +1,6 @@
 {
   "name": "@dadidi/dsh-memory-brain",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "记忆星脑：meow-memory 记忆库的 3D 神经脑图面板（左侧栏入口 + 桌面内嵌 + 同源 Web API）",
   "keywords": [
     "deepseek-harness",
