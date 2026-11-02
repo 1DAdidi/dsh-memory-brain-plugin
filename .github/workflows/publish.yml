@@ -1,16 +1,16 @@
-name: Publish to GitHub Packages
+name: Publish to npm
 run-name: Publish ${{ github.ref_name }}
 on:
   push:
     tags:
-      - 'v*' # 只有推送 v 开头标签（v0.1.0、v1.0.8）才触发发布
+      - 'v*' # 只有推送 v 开头标签（v0.1.0、v1.0.9）才触发发布
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      packages: write # 必须开启，才能上传包到 GitHub Packages
+      id-token: write
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
@@ -19,8 +19,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          registry-url: https://npm.pkg.github.com
-          scope: '@${{ github.repository_owner }}' # 自动读取你的用户名作为包scope
+          registry-url: https://registry.npmjs.org
 
       - name: Install dependencies
         run: npm ci
@@ -31,4 +30,4 @@ jobs:
       - name: Publish
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
