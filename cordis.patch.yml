@@ -1,4 +1,4 @@
-# dsh-memory-brain bundle patch: inserts this plugin into a profile's layer stack.
+# dsh-memory-neural-map bundle patch: inserts this plugin into a profile's layer stack.
 - insert:
-    - id: dsh-memory-brain
-      name: 'dsh-memory-brain'
+    - id: dsh-memory-neural-map
+      name: 'dsh-memory-neural-map'
