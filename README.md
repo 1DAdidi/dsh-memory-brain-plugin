@@ -2,7 +2,7 @@
 
 meow-memory 记忆库的 **3D 神经元面板**，双形态：
 
-- **DSH 桌面插件** `dsh-memory-brain`：左侧栏「🧠 记忆星脑」内嵌小界面 + ⧉ 完整网页（同源路由 `/memory-brain/*`）
+- **DSH 桌面插件** `dsh-memory-neural-map`：左侧栏「🧠 记忆星脑」内嵌小界面 + ⧉ 完整网页（同源路由 `/memory-brain/*`）
 - **独立网页**（备用）：`start.bat` / `python server.py`，仅本机 `http://127.0.0.1:8643`
 
 ## 八大固定分区（节点强制归类）
